@@ -1,9 +1,9 @@
-print("Welcome to the programme")
-print("Enter a number between 1 - 9 to pick which question to go to or enter 0 to exit")
-# try is being used to try and run the code if an integer is not used then an error will occur which we be dipslayed to the user and the programme will loop
-# error handling is broken again fix it!!!! when implimented above and below choice = int it either says that it isn't refrenced or it just skips past the error
-# error handling now seems to be working
+# try is being used to try and run the code if an integer is not used then an error will occur which we be displayed
+# to the user and the programme will loop error handling is broken again fix it!!!! when implemented above and below choice = int it either says that it isn't referenced or it just skips past
+# the error handling now seems to be working
 while True:
+    print("Welcome to the programme")
+    print("Enter a number between 1 - 9 to pick which question to go to or enter 0 to exit")
     try:
         choice = int(input())
         if choice < 0:
@@ -15,6 +15,7 @@ while True:
             first_name = input("Please enter your first name\n")
             last_name = input("Please enter your last name\n")
             print("Hello, " + first_name + " " + last_name)
+# question one has been implemented and after some testing has proved to be working without issues
         elif choice == 0:
             break
     except Exception:
