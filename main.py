@@ -2,8 +2,8 @@
 # to the user and the programme will loop error handling is broken again fix it!!!! when implemented above and below choice = int it either says that it isn't referenced or it just skips past
 # the error handling now seems to be working - testing has been completed and the issue was just wrapping the choice = int in the try loop instead of the whole code block
 while True:
-    print("Welcome to the programme")
-    print("Enter a number between 1 - 9 to pick which question to go to or enter 0 to exit")
+    print("Welcome to the programme\n")
+    print("Enter a number between 1 - 9 to pick which question to go to or enter 0 to exit\n")
     try:
         choice = int(input())
         if choice < 0:
@@ -17,9 +17,27 @@ while True:
             print("Hello, " + first_name + " " + last_name)
 # question one has been implemented and after some testing has proved to be working without issues
         elif choice == 2:
-            print("Press enter to see answer")
-            input("What do you hear if you put the Linux Shell to your ear?")
+            input("What do you hear if you put the Linux Shell to your ear?\n")
+            print("Press enter to see the answer\n")
             print("The C")
+        elif choice == 3:
+                print("Enter 2 numbers to add together and then a third to multiply by\n")
+                num1 = float(input("Please enter the first number\n"))
+                num2 = float(input("Please enter the second number\n"))
+                num3 = float (input("Please enter the third number\n"))
+# the user enters the numbers they want to add together, and then they enter the number they want to multiply by
+                first_total = num1 + num2
+                total = first_total * num3
+                print("your total is", total)
+        elif choice == 4:
+            slice_start = int(input("How many slices of pizza did you start with?\n"))
+            slice_eaten = int(input("How many slices have you eaten?\n"))
+            slices_left: int = slice_start - slice_eaten
+            if slice_start > slice_eaten:
+                print("You have" ,slices_left, "slices of pizza left\n")
+# the code below will make it so if the user inputs that they have eaten more pizza slices than they started with they will receive an error message and go back to the start
+            elif slice_start < slice_eaten:
+                print("You must have entered the wrong numbers try again\n")
         elif choice == 0:
             break
     except Exception:
