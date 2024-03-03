@@ -1,6 +1,6 @@
 # try is being used to try and run the code if an integer is not used then an error will occur which we be displayed
 # to the user and the programme will loop error handling is broken again fix it!!!! when implemented above and below choice = int it either says that it isn't referenced or it just skips past
-# the error handling now seems to be working
+# the error handling now seems to be working - testing has been completed and the issue was just wrapping the choice = int in the try loop instead of the whole code block
 while True:
     print("Welcome to the programme")
     print("Enter a number between 1 - 9 to pick which question to go to or enter 0 to exit")
@@ -16,6 +16,10 @@ while True:
             last_name = input("Please enter your last name\n")
             print("Hello, " + first_name + " " + last_name)
 # question one has been implemented and after some testing has proved to be working without issues
+        elif choice == 2:
+            print("Press enter to see answer")
+            input("What do you hear if you put the Linux Shell to your ear?")
+            print("The C")
         elif choice == 0:
             break
     except Exception:
