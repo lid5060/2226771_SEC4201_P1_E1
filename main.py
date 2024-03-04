@@ -64,25 +64,25 @@ while True:
             print("Name of a shape by entering the number of sides")
             shape_sides = int(input("Please enter a number between 3 - 10 to see the name of the shape\n"))
             if shape_sides == 3:
-                print("Your shape is called a triangle")
+                print("Your shape is called a triangle\n")
             elif shape_sides == 4:
-                print("Your shape is called a quadrilateral")
+                print("Your shape is called a quadrilateral\n")
             elif shape_sides == 5:
-                print("Your shape is called a pentagon")
+                print("Your shape is called a pentagon\n")
             elif shape_sides == 6:
-                print("Your shape is called a hexagon")
+                print("Your shape is called a hexagon\n")
             elif shape_sides == 7:
-                print("Your shape is called a heptagon")
+                print("Your shape is called a heptagon\n")
             elif shape_sides == 8:
-                print("Your shape is called a octagon")
+                print("Your shape is called a octagon\n")
             elif shape_sides == 9:
-                print("Your shape is called a nonagon")
+                print("Your shape is called a nonagon\n")
             elif shape_sides == 10:
-                print("Your shape is called a decagon")
+                print("Your shape is called a decagon\n")
             elif shape_sides < 3:
-                print("Please enter a number between 3 - 10")
+                print("Please enter a number between 3 - 10\n")
             elif shape_sides > 10:
-                print("Please enter a number between 3 - 10")
+                print("Please enter a number between 3 - 10\n")
         elif choice == 0:
             break
     except Exception:
