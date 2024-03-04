@@ -17,8 +17,8 @@ while True:
             print("Hello, " + first_name + " " + last_name)
 # question one has been implemented and after some testing has proved to be working without issues
         elif choice == 2:
-            input("What do you hear if you put the Linux Shell to your ear?\n")
             print("Press enter to see the answer\n")
+            input("What do you hear if you put the Linux Shell to your ear?\n")
             print("The C")
         elif choice == 3:
                 print("Enter 2 numbers to add together and then a third to multiply by\n")
