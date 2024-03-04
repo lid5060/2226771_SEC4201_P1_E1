@@ -24,7 +24,7 @@ while True:
                 print("Enter 2 numbers to add together and then a third to multiply by\n")
                 num1 = float(input("Please enter the first number\n"))
                 num2 = float(input("Please enter the second number\n"))
-                num3 = float (input("Please enter the third number\n"))
+                num3 = float(input("Please enter the third number\n"))
 # the user enters the numbers they want to add together, and then they enter the number they want to multiply by
                 first_total = num1 + num2
                 total = first_total * num3
@@ -34,10 +34,25 @@ while True:
             slice_eaten = int(input("How many slices have you eaten?\n"))
             slices_left: int = slice_start - slice_eaten
             if slice_start > slice_eaten:
-                print("You have" ,slices_left, "slices of pizza left\n")
+                print("You have", slices_left, "slices of pizza left\n")
 # the code below will make it so if the user inputs that they have eaten more pizza slices than they started with they will receive an error message and go back to the start
             elif slice_start < slice_eaten:
                 print("You must have entered the wrong numbers try again\n")
+# the age wouldn't print out with the name and after some testing and thinking I realised I had to set it to an int or float for it to print out
+        elif choice == 5:
+            name = input("Please enter your first name\n")
+            age = int(input("Please enter your age\n"))
+            new_age = age + 1
+            print(name, "next birthday you will be", new_age)
+        elif choice == 6:
+            bill_total = float(input("What is the total price of the bill?\n"))
+            diners_total = int(input("How many diners are there?\n"))
+            price_per_diner = bill_total / diners_total
+            print("Each person must pay", price_per_diner)
+        elif choice == 7:
+            weight = float(input("Please enter your weight in kilograms\n"))
+            pounds = weight * 2.204
+            print("Your weight in pounds is", pounds)
         elif choice == 0:
             break
     except Exception:
