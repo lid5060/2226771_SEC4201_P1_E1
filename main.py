@@ -1,6 +1,8 @@
 # try is being used to try and run the code if an integer is not used then an error will occur which we be displayed
-# to the user and the programme will loop error handling is broken again fix it!!!! when implemented above and below choice = int it either says that it isn't referenced or it just skips past
-# the error handling now seems to be working - testing has been completed and the issue was just wrapping the choice = int in the try loop instead of the whole code block
+# to the user and the programme will loop error handling is broken again fix it!!!! when implemented above and below choice = int
+# it either says that it isn't referenced or it just skips past
+# the error handling now seems to be working - testing has been completed and the issue was just wrapping the choice = int in the try loop
+# instead of the whole code block
 while True:
     print("Welcome to the programme\n")
     print("Enter a number between 1 - 9 to pick which question to go to or enter 0 to exit\n")
@@ -36,10 +38,12 @@ while True:
             slices_left: int = slice_start - slice_eaten
             if slice_start > slice_eaten:
                 print("You have", slices_left, "slices of pizza left\n")
-# the code below will make it so if the user inputs that they have eaten more pizza slices than they started with they will receive an error message and go back to the start
+# the code below will make it so if the user inputs that they have eaten more pizza slices than they started with they will receive an error message
+# and go back to the start
             elif slice_start < slice_eaten:
                 print("You must have entered the wrong numbers try again\n")
-# the age wouldn't print out with the name and after some testing and thinking I remembered I had to set it to an int or float for it to print out the number
+# the age wouldn't print out with the name and after some testing and thinking I remembered I had to set it to an int or float
+# for it to print out the number
         elif choice == 5:
             name = input("Please enter your first name\n")
             age = int(input("Please enter your age\n"))
