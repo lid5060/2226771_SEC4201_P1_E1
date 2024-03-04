@@ -53,6 +53,36 @@ while True:
             weight = float(input("Please enter your weight in kilograms\n"))
             pounds = weight * 2.204
             print("Your weight in pounds is", pounds)
+        elif choice == 8:
+            num1 = int(input("Please enter in the first number\n"))
+            num2 = int(input("Please enter in the number you want to divide by\n"))
+            divided_num = num1 // num2
+            remainder_num = num1 % num2
+# we work out the first number when divided, and then we work out the remainder to print out to the user
+            print(num1, "divided by", num2, "is", divided_num, "with a remainder of", remainder_num)
+        elif choice == 9:
+            print("Name of a shape by entering the number of sides")
+            shape_sides = int(input("Please enter a number between 3 - 10 to see the name of the shape\n"))
+            if shape_sides == 3:
+                print("Your shape is called a triangle")
+            elif shape_sides == 4:
+                print("Your shape is called a quadrilateral")
+            elif shape_sides == 5:
+                print("Your shape is called a pentagon")
+            elif shape_sides == 6:
+                print("Your shape is called a hexagon")
+            elif shape_sides == 7:
+                print("Your shape is called a heptagon")
+            elif shape_sides == 8:
+                print("Your shape is called a octagon")
+            elif shape_sides == 9:
+                print("Your shape is called a nonagon")
+            elif shape_sides == 10:
+                print("Your shape is called a decagon")
+            elif shape_sides < 3:
+                print("Please enter a number between 3 - 10")
+            elif shape_sides > 10:
+                print("Please enter a number between 3 - 10")
         elif choice == 0:
             break
     except Exception:
@@ -67,3 +97,6 @@ while True:
 # w3schools, n.d. Python Try Except. [Online]
 # Available at: https://www.w3schools.com/python/python_try_except.asp
 # [Accessed 1 March 2024]
+# Bob, 2011. Find the division remainder of a number. [Online]
+# Available at: https://stackoverflow.com/questions/5584586/find-the-division-remainder-of-a-number
+# [Accessed 4 March 2024]
