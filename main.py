@@ -86,7 +86,7 @@ while True:
         elif choice == 0:
             break
     except Exception:
-        print("Please enter a number")
+        print("Error please enter a number")
 # all questions and the code for them need to be implemented along with error handling for all the inputs as completed above
 # if the user inputs a number which is lower than or equal to 0 they will be sent back to the start of the programme with an error message
 
