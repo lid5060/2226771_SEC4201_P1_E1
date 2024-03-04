@@ -22,10 +22,11 @@ while True:
             print("The C")
         elif choice == 3:
                 print("Enter 2 numbers to add together and then a third to multiply by\n")
-                num1 = float(input("Please enter the first number\n"))
-                num2 = float(input("Please enter the second number\n"))
-                num3 = float(input("Please enter the third number\n"))
-# the user enters the numbers they want to add together, and then they enter the number they want to multiply by
+# the user inputs all three number which are stored and then the first numbers are added together and stored in first_total
+# then they are multiplied in total and then are printed to the screen
+                num1 = int(input("Please enter the first number\n"))
+                num2 = int(input("Please enter the second number\n"))
+                num3 = int(input("Please enter the third number\n"))
                 first_total = num1 + num2
                 total = first_total * num3
                 print("your total is", total)
@@ -38,7 +39,7 @@ while True:
 # the code below will make it so if the user inputs that they have eaten more pizza slices than they started with they will receive an error message and go back to the start
             elif slice_start < slice_eaten:
                 print("You must have entered the wrong numbers try again\n")
-# the age wouldn't print out with the name and after some testing and thinking I realised I had to set it to an int or float for it to print out
+# the age wouldn't print out with the name and after some testing and thinking I remembered I had to set it to an int or float for it to print out the number
         elif choice == 5:
             name = input("Please enter your first name\n")
             age = int(input("Please enter your age\n"))
@@ -59,7 +60,11 @@ while True:
             divided_num = num1 // num2
             remainder_num = num1 % num2
 # we work out the first number when divided, and then we work out the remainder to print out to the user
-            print(num1, "divided by", num2, "is", divided_num, "with a remainder of", remainder_num)
+            if num1 > num2:
+                print(num1, "divided by", num2, "is", divided_num, "with a remainder of", remainder_num)
+# an error will be printed to the user if they input a number for the second one which is higher than the first
+            elif num1 < num2:
+                print("Error second number cant be higher than the first try again")
         elif choice == 9:
             print("Name of a shape by entering the number of sides")
             shape_sides = int(input("Please enter a number between 3 - 10 to see the name of the shape\n"))
